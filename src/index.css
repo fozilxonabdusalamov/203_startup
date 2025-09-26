@@ -1,7 +1,10 @@
 /* JobLink - Professional CSS Reset & Variables */
 
-.search-input{
+.search-input {
   color: #8fa6b2 !important;
+}
+.btn .btn-outline .btn-lg {
+  color: #d1dee6 !important;
 }
 :root {
   /* === JOBLINK BRAND COLORS - Logo ranglariga asoslangan === */
@@ -431,6 +434,8 @@ img {
 
 .btn-primary:hover {
   background: var(--primary-hover);
+  color: var(--white);
+
   transform: translateY(-1px);
   box-shadow: var(--shadow-lg);
 }
@@ -457,7 +462,7 @@ img {
 
 .btn-outline {
   background: transparent;
-  color: var(--primary);
+  color: var(--accent);
   border: 1px solid var(--primary);
 }
 
