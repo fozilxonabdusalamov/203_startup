@@ -172,7 +172,6 @@ const Workers = () => {
 
           <main className="workers-list">
             <div className="workers-count">
-              <span>{workers.length} ta mavsumiy ishchi topildi</span>
             </div>
 
             <div className="workers-grid">
