@@ -78,7 +78,7 @@ const Footer = () => {
                 <a href="tel:+998901234567">+998 (90) 123-45-67</a>
               </li>
               <li>
-                <a href="mailto:info@joblink.uz">info@joblink.uz</a>
+                <a href="mailto:info@ishlink.uz">info@ishlink.uz</a>
               </li>
               <li>Toshkent, O'zbekiston</li>
             </ul>
