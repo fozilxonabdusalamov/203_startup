@@ -88,7 +88,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2025 JobLink. Barcha huquqlar himoyalangan.</p>
+          <p>&copy; 2025 ishlink. Barcha huquqlar himoyalangan.</p>
           <div className="footer-bottom-links">
             <Link to="/legal/terms">Shartlar</Link>
             <Link to="/legal/privacy">Maxfiylik</Link>

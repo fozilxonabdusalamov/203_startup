@@ -585,7 +585,7 @@ const Home = () => {
           <div className="section-header">
             <h2 className="section-title">Muvaffaqiyat hikoyalari</h2>
             <p className="section-description">
-              Minglab mavsumiy ishchi va fermer xo'jaliklari JobLink orqali
+              Minglab mavsumiy ishchi va fermer xo'jaliklari ishlink orqali
               muvaffaqiyat qozongan
             </p>
           </div>
