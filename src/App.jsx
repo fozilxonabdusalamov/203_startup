@@ -13,7 +13,8 @@ import Pricing from './pages/Pricing'
 import Blog from './pages/Blog'
 import BlogDetail from './pages/BlogDetail'
 import Help from './pages/Help'
-import Auth from './pages/Auth'
+import Login from './pages/Login'
+import Register from './pages/Register'
 // Ishchi dashboard sahifalari
 import WorkerDashboard from './pages/worker/Dashboard'
 import WorkerProfile from './pages/worker/Profile'
@@ -55,7 +56,11 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogDetail />} />
             <Route path="/help" element={<Help />} />
-            <Route path="/auth" element={<Auth />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/auth" element={<Login />} />
+            <Route path="/auth/register" element={<Register />} />
+            <Route path="/e/register" element={<Register />} />
             
             {/* Ishchi Dashboard */}
             <Route path="/w/dashboard" element={<WorkerDashboard />} />

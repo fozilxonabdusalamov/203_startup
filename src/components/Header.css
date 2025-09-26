@@ -139,6 +139,10 @@
   padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--border-radius-md);
 }
+.header-login,
+.header-register {
+  color: #374151 !important;
+}
 
 /* Header Actions */
 .header-actions {

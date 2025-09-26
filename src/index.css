@@ -169,6 +169,16 @@
   --bp-lg: 1024px;
   --bp-xl: 1280px;
   --bp-2xl: 1536px;
+
+  /* === ADDITIONAL VARIABLES FOR FORMS === */
+  --primary-rgb: 143, 166, 178; /* RGB values for --primary (#8fa6b2) */
+  --error-rgb: 239, 68, 68; /* RGB values for --error (#ef4444) */
+  --primary-50: #f8fafc;
+  --primary-100: #f1f5f9;
+  --surface: var(--white);
+  --surface-2: var(--gray-100);
+  --border: var(--gray-300);
+  --text-primary: var(--gray-900);
 }
 
 /* === CSS RESET === */

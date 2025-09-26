@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Eye, EyeOff, Mail, Lock, User, Building2, ArrowRight, Shield, Star, Phone, MapPin, CheckCircle } from 'lucide-react';
 import './Register.css';
 
+import JobLinkLogo from '../components/JobLinkLogo';
+
 const Register = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
@@ -88,7 +90,7 @@ const Register = () => {
     
     if (!formData.phone) {
       newErrors.phone = 'Telefon raqam kiritish majburiy';
-    } else if (!/^[\+]?[0-9\s\-\(\)]{10,}$/.test(formData.phone)) {
+    } else if (!/^[+]?[0-9\s-()]{10,}$/.test(formData.phone)) {
       newErrors.phone = 'Telefon raqam noto\'g\'ri formatda';
     }
     
@@ -213,10 +215,7 @@ const Register = () => {
             {/* Header */}
             <div className="register-header">
               <Link to="/" className="register-logo">
-                <div className="logo-container">
-                  <span className="logo-icon">🔗</span>
-                  <span className="logo-text">JobLink</span>
-                </div>
+                <JobLinkLogo className="w-24 h-8 mb-4" />
               </Link>
               
               <div className="register-title">

@@ -54,10 +54,11 @@ const Header = () => {
             </button>
 
             {/* Auth Buttons */}
-            <Link to="/auth/login" className="btn btn-outline btn-sm">
-              Kirish
-            </Link>
-            <Link to="/auth/register" className="btn btn-outline btn-sm">
+
+            <Link
+              to="/auth/register"
+              className="btn btn-outline btn-sm header-register"
+            >
               Ro'yxatdan o'tish
             </Link>
 
