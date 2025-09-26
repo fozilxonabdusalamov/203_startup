@@ -118,20 +118,66 @@ const Employers = () => {
   return (
     <div className="employers-page">
       <div className="employers-header">
+        <div className="header-background"></div>
         <div className="container">
-          <h1>Ish Beruvchilar</h1>
-          <p>O'zbekistonning eng yaxshi mavsumiy ish beruvchi kompaniyalari</p>
+          <div className="header-content">
+            <div className="header-text">
+              <h1>Ish Beruvchilar</h1>
+              <p>O'zbekistonning eng yaxshi mavsumiy ish beruvchi kompaniyalari bilan tanishing</p>
+            </div>
+            <div className="header-stats">
+              <div className="stat">
+                <span className="stat-number">500+</span>
+                <span className="stat-label">Kompaniya</span>
+              </div>
+              <div className="stat">
+                <span className="stat-number">2.5K+</span>
+                <span className="stat-label">Faol e'lon</span>
+              </div>
+              <div className="stat">
+                <span className="stat-number">4.8</span>
+                <span className="stat-label">O'rtacha reyting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="search-section">
+        <div className="container">
+          <div className="search-container">
+            <div className="search-box">
+              <input
+                type="text"
+                className="search-input"
+                placeholder="Kompaniya nomi yoki soha bo'yicha qidirish..."
+              />
+            </div>
+          </div>
+          <div className="quick-filters">
+            <button className="quick-filter active">Barcha sohalar</button>
+            <button className="quick-filter">Qishloq xo'jaligi</button>
+            <button className="quick-filter">Qurilish</button>
+            <button className="quick-filter">Turizm</button>
+            <button className="quick-filter">Tekstil</button>
+          </div>
         </div>
       </div>
 
       <div className="container">
         <div className="employers-content">
           <aside className="employers-filters">
-            <h3>Filtrlar</h3>
+            <div className="filters-header">
+              <h3>🎯 Filtrlar</h3>
+              <button className="filter-clear">
+                ✕ Tozalash
+              </button>
+            </div>
             
             <div className="filter-group">
-              <label>Soha</label>
+              <label>📊 Soha</label>
               <select 
+                className="filter-select"
                 value={filters.industry} 
                 onChange={(e) => handleFilterChange('industry', e.target.value)}
               >
@@ -143,8 +189,9 @@ const Employers = () => {
             </div>
 
             <div className="filter-group">
-              <label>Hudud</label>
+              <label>📍 Hudud</label>
               <select 
+                className="filter-select"
                 value={filters.location} 
                 onChange={(e) => handleFilterChange('location', e.target.value)}
               >
@@ -156,12 +203,13 @@ const Employers = () => {
             </div>
 
             <div className="filter-group">
-              <label>Kompaniya hajmi</label>
+              <label>👥 Kompaniya hajmi</label>
               <select 
+                className="filter-select"
                 value={filters.size} 
                 onChange={(e) => handleFilterChange('size', e.target.value)}
               >
-                <option value="">Har qanday hajm</option>
+                <option value="">Barcha hajmdagilar</option>
                 {companySizes.map(size => (
                   <option key={size} value={size}>{size} xodim</option>
                 ))}
@@ -169,19 +217,22 @@ const Employers = () => {
             </div>
 
             <div className="filter-group">
-              <label>Reyting</label>
+              <label>⭐ Reyting</label>
               <select 
+                className="filter-select"
                 value={filters.rating} 
                 onChange={(e) => handleFilterChange('rating', e.target.value)}
               >
-                <option value="">Har qanday reyting</option>
+                <option value="">Barcha reytinglar</option>
                 {ratings.map(rating => (
-                  <option key={rating} value={rating}>{rating} ⭐</option>
+                  <option key={rating} value={rating}>{rating}</option>
                 ))}
               </select>
             </div>
 
-            <button className="filter-clear">Filtrlarni tozalash</button>
+            <div className="filter-summary">
+              <span className="label">Natija:</span> {employers.length} ta kompaniya
+            </div>
           </aside>
 
           <main className="employers-list">
@@ -208,8 +259,8 @@ const Employers = () => {
                   
                   <div className="employer-info">
                     <div className="employer-header">
-                      <h3>
-                        <Link to={`/employer/${employer.id}`}>{employer.name}</Link>
+                      <h3 className='employer-name-title'>
+                        <Link to={`/employer/${employer.id}`}>{`${employer.name}`}</Link>
                       </h3>
                       <div className="employer-meta">
                         <span className="industry">{employer.industry}</span>

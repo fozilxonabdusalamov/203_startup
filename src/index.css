@@ -1,4 +1,8 @@
 /* JobLink - Professional CSS Reset & Variables */
+
+.search-input{
+  color: #8fa6b2 !important;
+}
 :root {
   /* === JOBLINK BRAND COLORS - Logo ranglariga asoslangan === */
   --primary: #8fa6b2; /* Logo asosiy fon rangi */
@@ -553,6 +557,7 @@ select {
   height: 40px;
   border-radius: 5px !important;
   outline: none !important;
+  text-indent: 10px !important;
 }
 
 @keyframes loading {

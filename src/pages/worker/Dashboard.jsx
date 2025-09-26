@@ -190,7 +190,6 @@ const WorkerDashboard = () => {
             
             <div className="quick-actions">
               <Link to="/seasonal-jobs" className="action-card">
-                <div className="action-icon">🔍</div>
                 <h4>Ish izlash</h4>
                 <p>Yangi mavsumiy ishlarni toping</p>
               </Link>
