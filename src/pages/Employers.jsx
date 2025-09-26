@@ -333,7 +333,6 @@ const Employers = () => {
                       >
                         Ko'rish
                       </Link>
-                      <button className="btn-follow">Kuzatish</button>
                     </div>
                   </div>
                 </div>
