@@ -97,9 +97,11 @@
 }
 
 .search-container {
-    width: 100%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .search-box {
@@ -149,7 +151,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 14px;
+  padding: 5px 14px;
   background: var(--surface);
   border: 2px solid var(--border);
   border-radius: var(--radius-full);
@@ -247,21 +249,96 @@
   font-size: var(--text-sm);
 }
 
+/* === PREMIUM SELECT ELEMENTS - COMPLETELY REDESIGNED === */
+
+/* Modern Filter Select Styling */
 .filter-select {
   width: 100%;
-  padding: 12px 14px;
-  border: 2px solid var(--border);
-  border-radius: var(--radius-md);
-  font-size: var(--text-md);
-  background: var(--surface);
-  color: var(--text-primary);
-  transition: border-color 0.2s, box-shadow 0.2s;
+  padding: var(--space-4) var(--space-5);
+  padding-right: var(--space-12);
+  border: 2px solid var(--gray-300);
+  border-radius: var(--border-radius-xl);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  background: var(--white);
+  color: var(--gray-800);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  appearance: none;
+  position: relative;
+
+  /* Premium Custom Arrow */
+  background-image: linear-gradient(45deg, transparent 50%, var(--primary) 50%),
+    linear-gradient(135deg, var(--primary) 50%, transparent 50%),
+    radial-gradient(
+      circle at center,
+      var(--primary-100) 0%,
+      var(--primary-100) 30%,
+      transparent 30%
+    );
+  background-position: calc(100% - 18px) calc(1em + 2px),
+    calc(100% - 13px) calc(1em + 2px), calc(100% - 15.5px) 50%;
+  background-size: 5px 5px, 5px 5px, 12px 12px;
+  background-repeat: no-repeat;
+
+  /* Premium Shadow */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 0 0 0 rgba(var(--primary-rgb), 0);
 }
 
 .filter-select:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 4px color-mix(in oklab, var(--primary) 14%, transparent);
+  background-color: var(--white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08),
+    0 0 0 3px rgba(var(--primary-rgb), 0.15);
+
+  /* Enhanced Arrow on Focus */
+  background-image: linear-gradient(
+      45deg,
+      transparent 50%,
+      var(--primary-dark) 50%
+    ),
+    linear-gradient(135deg, var(--primary-dark) 50%, transparent 50%),
+    radial-gradient(
+      circle at center,
+      var(--primary-200) 0%,
+      var(--primary-200) 30%,
+      transparent 30%
+    );
+}
+
+.filter-select:hover:not(:focus) {
+  border-color: var(--primary-300);
+  background-color: var(--gray-50);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 0 0 0 rgba(var(--primary-rgb), 0);
+}
+
+.filter-select:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05),
+    0 0 0 2px rgba(var(--primary-rgb), 0.2);
+}
+
+/* Premium Option Styling */
+.filter-select option {
+  padding: var(--space-3) var(--space-4);
+  background: var(--white);
+  color: var(--gray-800);
+  font-weight: var(--font-medium);
+  border: none;
+  cursor: pointer;
+}
+
+.filter-select option:hover {
+  background: var(--primary-50);
+  color: var(--primary-dark);
+}
+
+.filter-select option:checked {
+  background: var(--primary);
+  color: var(--white);
+  font-weight: var(--font-semibold);
 }
 
 .filter-summary {
@@ -316,13 +393,66 @@
   color: var(--text-secondary);
 }
 
+/* Modern Sort Select Styling */
 .sort-select {
-  padding: 10px 12px;
-  border: 2px solid var(--border);
-  border-radius: var(--radius-md);
-  background: var(--surface);
-  color: var(--text-primary);
+  padding: var(--space-3) var(--space-5);
+  padding-right: var(--space-10);
+  border: 2px solid var(--gray-300);
+  border-radius: var(--border-radius-lg);
+  background: var(--white);
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
   cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--gray-800);
+  min-width: 160px;
+  appearance: none;
+  position: relative;
+
+  /* Modern Gradient Arrow */
+  background-image: linear-gradient(
+      135deg,
+      var(--primary) 0%,
+      var(--primary-dark) 100%
+    ),
+    linear-gradient(45deg, transparent 50%, currentColor 50%),
+    linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: calc(100% - 8px) 50%, calc(100% - 16px) calc(1em + 1px),
+    calc(100% - 12px) calc(1em + 1px);
+  background-size: 20px 20px, 4px 4px, 4px 4px;
+  background-repeat: no-repeat;
+
+  /* Premium Shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.sort-select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.15),
+    0 0 0 3px rgba(var(--primary-rgb), 0.1);
+
+  background-image: linear-gradient(
+      135deg,
+      var(--primary-dark) 0%,
+      var(--primary) 100%
+    ),
+    linear-gradient(45deg, transparent 50%, var(--white) 50%),
+    linear-gradient(135deg, var(--white) 50%, transparent 50%);
+}
+
+.sort-select:hover:not(:focus) {
+  border-color: var(--primary-400);
+  background-color: var(--gray-50);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.sort-select:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), inset 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .view-mode-toggle {
@@ -1240,7 +1370,6 @@
 
   .job-image {
     height: 160px;
-
   }
 
   .job-info {

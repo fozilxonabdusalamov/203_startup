@@ -1,84 +1,87 @@
 /* JobLink - Professional CSS Reset & Variables */
 :root {
   /* === JOBLINK BRAND COLORS - Logo ranglariga asoslangan === */
-  --primary: #8fa6b2;              /* Logo asosiy fon rangi */
-  --primary-light: #9fb6c2;        /* Primary ochiq versiyasi */
-  --primary-dark: #7f96a2;         /* Primary to'q versiyasi */
-  --primary-hover: #7f96a2;        /* Hover holatida */
-  
-  --secondary: #d1dee6;            /* Logo ikkinchi rang - ochiq ko'k */
-  --secondary-light: #e1eef6;      /* Secondary ochiq versiyasi */
-  --secondary-dark: #c1ced6;       /* Secondary to'q versiyasi */
-  
-  --accent: #ffffff;               /* Oq rang - ta'kidlash uchun */
-  --accent-light: #f8f9fa;         /* Kulrang oq */
-  --accent-dark: #e9ecef;          /* To'q oq */
-  
+  --primary: #8fa6b2; /* Logo asosiy fon rangi */
+  --primary-light: #9fb6c2; /* Primary ochiq versiyasi */
+  --primary-dark: #7f96a2; /* Primary to'q versiyasi */
+  --primary-hover: #7f96a2; /* Hover holatida */
+
+  --secondary: #d1dee6; /* Logo ikkinchi rang - ochiq ko'k */
+  --secondary-light: #e1eef6; /* Secondary ochiq versiyasi */
+  --secondary-dark: #c1ced6; /* Secondary to'q versiyasi */
+
+  --accent: #ffffff; /* Oq rang - ta'kidlash uchun */
+  --accent-light: #f8f9fa; /* Kulrang oq */
+  --accent-dark: #e9ecef; /* To'q oq */
+
   /* === MATN RANGLARI === */
-  --color-text-primary: #2c3e50;   /* Asosiy matn rangi */
+  --color-text-primary: #2c3e50; /* Asosiy matn rangi */
   --color-text-secondary: #5a6c7d; /* Ikkinchi darajali matn */
-  --color-text-light: #ffffff;     /* Oq matn */
-  --color-text-muted: #8a9ba8;     /* So'ndirilgan matn */
-  
+  --color-text-light: #ffffff; /* Oq matn */
+  --color-text-muted: #8a9ba8; /* So'ndirilgan matn */
+
   /* === STATUS COLORS - Logo bilan uyg'un === */
-  --success: #22c55e;              /* Yashil - success uchun */
-  --success-light: #4ade80;        /* Ochiq yashil */
-  --success-dark: #16a34a;         /* To'q yashil */
-  
-  --warning: #f59e0b;              /* Sariq - warning uchun */
-  --warning-light: #fbbf24;        /* Ochiq sariq */
-  --warning-dark: #d97706;         /* To'q sariq */
-  
-  --error: #ef4444;                /* Qizil - error uchun */
-  --error-light: #f87171;          /* Ochiq qizil */
-  --error-dark: #dc2626;           /* To'q qizil */
-  
-  --info: #d1dee6;                 /* Logo secondary rangi ishlatildi */
+  --success: #22c55e; /* Yashil - success uchun */
+  --success-light: #4ade80; /* Ochiq yashil */
+  --success-dark: #16a34a; /* To'q yashil */
+
+  --warning: #f59e0b; /* Sariq - warning uchun */
+  --warning-light: #fbbf24; /* Ochiq sariq */
+  --warning-dark: #d97706; /* To'q sariq */
+
+  --error: #ef4444; /* Qizil - error uchun */
+  --error-light: #f87171; /* Ochiq qizil */
+  --error-dark: #dc2626; /* To'q qizil */
+
+  --info: #d1dee6; /* Logo secondary rangi ishlatildi */
   --info-light: #e1eef6;
   --info-dark: #c1ced6;
-  
+
   /* === FEATURE COLORS - Logo ranglariga asoslangan === */
-  --feature-primary: var(--primary);    /* #8fa6b2 */
+  --feature-primary: var(--primary); /* #8fa6b2 */
   --feature-secondary: var(--secondary); /* #d1dee6 */
-  --feature-accent: #10b981;             /* Yashil accent */
-  --feature-highlight: #8b5cf6;         /* Binafsha highlight */
-  
+  --feature-accent: #10b981; /* Yashil accent */
+  --feature-highlight: #8b5cf6; /* Binafsha highlight */
+
   /* === NEUTRAL COLORS - Logo bilan uyg'unlashtirilgan === */
-  --white: #ffffff;                 /* Logo oq rangi */
-  --gray-50: #f8f9fa;              /* Eng ochiq kulrang */
-  --gray-100: #f1f3f4;             /* Ochiq kulrang */
-  --gray-200: #e9ecef;             /* Kulrang */
-  --gray-300: #dee2e6;             /* O'rta kulrang */
-  --gray-400: #ced4da;             /* Kulrang */
-  --gray-500: #adb5bd;             /* O'rta kulrang */
-  --gray-600: #6c757d;             /* To'q kulrang */
-  --gray-700: #495057;             /* Juda to'q kulrang */
-  --gray-800: #343a40;             /* Qora-kulrang */
-  --gray-900: #2c3e50;             /* Asosiy matn rangi */
-  --black: #000000;                /* Qora */
-  
+  --white: #ffffff; /* Logo oq rangi */
+  --gray-50: #f8f9fa; /* Eng ochiq kulrang */
+  --gray-100: #f1f3f4; /* Ochiq kulrang */
+  --gray-200: #e9ecef; /* Kulrang */
+  --gray-300: #dee2e6; /* O'rta kulrang */
+  --gray-400: #ced4da; /* Kulrang */
+  --gray-500: #adb5bd; /* O'rta kulrang */
+  --gray-600: #6c757d; /* To'q kulrang */
+  --gray-700: #495057; /* Juda to'q kulrang */
+  --gray-800: #343a40; /* Qora-kulrang */
+  --gray-900: #2c3e50; /* Asosiy matn rangi */
+  --black: #000000; /* Qora */
+
   /* === CHEGARA RANGLARI === */
-  --color-border: #dee2e6;         /* Asosiy chegara */
-  --color-border-light: #f1f3f4;   /* Ochiq chegara */
+  --color-border: #dee2e6; /* Asosiy chegara */
+  --color-border-light: #f1f3f4; /* Ochiq chegara */
   --color-border-primary: #8fa6b2; /* Primary chegara */
-  
+
   /* === TYPOGRAPHY === */
-  --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  --font-secondary: 'Georgia', 'Times New Roman', serif;
-  --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Consolas', monospace;
-  
+  --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  --font-secondary: "Georgia", "Times New Roman", serif;
+  --font-mono: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", "Consolas",
+    monospace;
+
   /* Font Sizes */
-  --text-xs: 0.75rem;      /* 12px */
-  --text-sm: 0.875rem;     /* 14px */
-  --text-base: 1rem;       /* 16px */
-  --text-lg: 1.125rem;     /* 18px */
-  --text-xl: 1.25rem;      /* 20px */
-  --text-2xl: 1.5rem;      /* 24px */
-  --text-3xl: 1.875rem;    /* 30px */
-  --text-4xl: 2.25rem;     /* 36px */
-  --text-5xl: 3rem;        /* 48px */
-  --text-6xl: 3.75rem;     /* 60px */
-  
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem; /* 36px */
+  --text-5xl: 3rem; /* 48px */
+  --text-6xl: 3.75rem; /* 60px */
+
   /* Font Weights */
   --font-thin: 100;
   --font-light: 300;
@@ -88,7 +91,7 @@
   --font-bold: 700;
   --font-extrabold: 800;
   --font-black: 900;
-  
+
   /* Line Heights */
   --leading-none: 1;
   --leading-tight: 1.25;
@@ -96,50 +99,53 @@
   --leading-normal: 1.5;
   --leading-relaxed: 1.625;
   --leading-loose: 2;
-  
+
   /* === SPACING === */
   --space-0: 0;
-  --space-1: 0.25rem;     /* 4px */
-  --space-2: 0.5rem;      /* 8px */
-  --space-3: 0.75rem;     /* 12px */
-  --space-4: 1rem;        /* 16px */
-  --space-5: 1.25rem;     /* 20px */
-  --space-6: 1.5rem;      /* 24px */
-  --space-8: 2rem;        /* 32px */
-  --space-10: 2.5rem;     /* 40px */
-  --space-12: 3rem;       /* 48px */
-  --space-16: 4rem;       /* 64px */
-  --space-20: 5rem;       /* 80px */
-  --space-24: 6rem;       /* 96px */
-  --space-32: 8rem;       /* 128px */
-  --space-40: 10rem;      /* 160px */
-  --space-48: 12rem;      /* 192px */
-  --space-56: 14rem;      /* 224px */
-  --space-64: 16rem;      /* 256px */
-  
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+  --space-10: 2.5rem; /* 40px */
+  --space-12: 3rem; /* 48px */
+  --space-16: 4rem; /* 64px */
+  --space-20: 5rem; /* 80px */
+  --space-24: 6rem; /* 96px */
+  --space-32: 8rem; /* 128px */
+  --space-40: 10rem; /* 160px */
+  --space-48: 12rem; /* 192px */
+  --space-56: 14rem; /* 224px */
+  --space-64: 16rem; /* 256px */
+
   /* === BORDER RADIUS === */
   --radius-none: 0;
-  --radius-sm: 0.25rem;   /* 4px */
-  --radius-md: 0.375rem;  /* 6px */
-  --radius-lg: 0.5rem;    /* 8px */
-  --radius-xl: 0.75rem;   /* 12px */
-  --radius-2xl: 1rem;     /* 16px */
-  --radius-3xl: 1.5rem;   /* 24px */
+  --radius-sm: 0.25rem; /* 4px */
+  --radius-md: 0.375rem; /* 6px */
+  --radius-lg: 0.5rem; /* 8px */
+  --radius-xl: 0.75rem; /* 12px */
+  --radius-2xl: 1rem; /* 16px */
+  --radius-3xl: 1.5rem; /* 24px */
   --radius-full: 9999px;
-  
+
   /* === SHADOWS - Logo ranglari bilan === */
   --shadow-sm: 0 1px 2px 0 rgba(74, 107, 122, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(74, 107, 122, 0.1), 0 2px 4px -1px rgba(74, 107, 122, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(74, 107, 122, 0.1), 0 4px 6px -2px rgba(74, 107, 122, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(74, 107, 122, 0.1), 0 10px 10px -5px rgba(74, 107, 122, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(74, 107, 122, 0.1),
+    0 2px 4px -1px rgba(74, 107, 122, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(74, 107, 122, 0.1),
+    0 4px 6px -2px rgba(74, 107, 122, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(74, 107, 122, 0.1),
+    0 10px 10px -5px rgba(74, 107, 122, 0.04);
   --shadow-2xl: 0 25px 50px -12px rgba(74, 107, 122, 0.25);
   --shadow-inner: inset 0 2px 4px 0 rgba(74, 107, 122, 0.06);
-  
+
   /* === TRANSITIONS === */
   --transition-fast: all 0.15s ease-in-out;
   --transition-normal: all 0.3s ease-in-out;
   --transition-slow: all 0.5s ease-in-out;
-  
+
   /* === Z-INDEX === */
   --z-dropdown: 1000;
   --z-sticky: 1020;
@@ -149,7 +155,7 @@
   --z-popover: 1060;
   --z-tooltip: 1070;
   --z-toast: 1080;
-  
+
   /* === BREAKPOINTS === */
   --bp-sm: 640px;
   --bp-md: 768px;
@@ -159,7 +165,9 @@
 }
 
 /* === CSS RESET === */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -186,7 +194,12 @@ body {
 }
 
 /* === TYPOGRAPHY UTILITIES === */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: var(--font-semibold);
   line-height: var(--leading-tight);
   color: var(--gray-900);
@@ -239,7 +252,10 @@ a:hover {
 }
 
 /* === FORM ELEMENTS === */
-input, textarea, select, button {
+input,
+textarea,
+select,
+button {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -252,21 +268,26 @@ button {
   outline: none;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   border: 1px solid var(--gray-300);
   border-radius: var(--radius-md);
   padding: var(--space-3) var(--space-4);
   transition: var(--transition-fast);
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
   border-color: var(--primary);
 }
 
 /* === LIST ELEMENTS === */
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -359,11 +380,11 @@ img {
   .md\:block {
     display: block;
   }
-  
+
   .md\:hidden {
     display: none;
   }
-  
+
   .md\:flex {
     display: flex;
   }
@@ -373,7 +394,7 @@ img {
   .lg\:block {
     display: block;
   }
-  
+
   .lg\:hidden {
     display: none;
   }
@@ -519,9 +540,19 @@ img {
 
 /* === LOADING STATES === */
 .skeleton {
-  background: linear-gradient(90deg, var(--gray-200) 25%, var(--gray-100) 50%, var(--gray-200) 75%);
+  background: linear-gradient(
+    90deg,
+    var(--gray-200) 25%,
+    var(--gray-100) 50%,
+    var(--gray-200) 75%
+  );
   background-size: 200% 100%;
   animation: loading 1.5s infinite;
+}
+select {
+  height: 40px;
+  border-radius: 5px !important;
+  outline: none !important;
 }
 
 @keyframes loading {
@@ -593,11 +624,11 @@ img {
   h1 {
     font-size: var(--text-3xl);
   }
-  
+
   h2 {
     font-size: var(--text-2xl);
   }
-  
+
   h3 {
     font-size: var(--text-xl);
   }
@@ -611,12 +642,13 @@ img {
     box-shadow: none !important;
     text-shadow: none !important;
   }
-  
+
   .no-print {
     display: none !important;
   }
 }
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
