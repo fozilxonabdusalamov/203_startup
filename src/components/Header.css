@@ -140,13 +140,12 @@
   border-radius: var(--border-radius-md);
 }
 
-
-
 /* Header Actions */
 .header-actions {
   display: flex;
   align-items: center;
-  gap: var(--spacing-md);
+  gap: 20px;
+
   flex-shrink: 0;
 }
 
@@ -162,8 +161,6 @@
   align-items: center;
   justify-content: center;
 }
-
-
 
 /* Profile Dropdown */
 .profile-dropdown {

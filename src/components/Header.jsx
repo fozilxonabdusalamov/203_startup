@@ -53,47 +53,6 @@ const Header = () => {
               <MessageSquare size={20} />
             </button>
 
-            {/* Profile Dropdown */}
-            <div className="profile-dropdown">
-              <button className="profile-button" onClick={toggleProfile}>
-                <User size={20} />
-              </button>
-
-              {isProfileOpen && (
-                <div className="profile-menu">
-                  <div className="profile-section">
-                    <Link to="/u/dashboard" className="profile-item">
-                      <User size={16} />
-                      Ish Izlovchi
-                    </Link>
-                    <Link to="/e/dashboard" className="profile-item">
-                      <Building size={16} />
-                      Ish Beruvchi
-                    </Link>
-                  </div>
-                  <div className="profile-section">
-                    <Link to="/u/profile" className="profile-item">
-                      Profilim
-                    </Link>
-                    <Link to="/u/applications" className="profile-item">
-                      Arizalarim
-                    </Link>
-                    <Link to="/u/saved" className="profile-item">
-                      Saqlangan
-                    </Link>
-                    <Link to="/u/settings" className="profile-item">
-                      Sozlamalar
-                    </Link>
-                  </div>
-                  <div className="profile-section">
-                    <button className="profile-item text-red-600">
-                      Chiqish
-                    </button>
-                  </div>
-                </div>
-              )}
-            </div>
-
             {/* Auth Buttons */}
             <Link to="/auth/login" className="btn btn-outline btn-sm">
               Kirish
