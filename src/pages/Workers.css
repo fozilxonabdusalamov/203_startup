@@ -375,8 +375,6 @@
   grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
   gap: var(--space-6);
 }
-  margin-bottom: var(--spacing-lg);
-}
 
 .filter-group label {
   display: block;
