@@ -39,9 +39,6 @@ const Header = () => {
             <Link to="/employers" className="nav-link">
               Ish beruvchilar
             </Link>
-            <Link to="/mardikor" className="nav-link">
-              Tezkor Ishchilar
-            </Link>
           </nav>
 
           {/* Auth & Profile */}
