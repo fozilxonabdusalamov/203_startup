@@ -90,7 +90,7 @@ const Login = () => {
               <Link to="/" className="login-logo">
                 <div className="logo-container">
                   <span className="logo-icon">🔗</span>
-                  <span className="logo-text">JobLink</span>
+                  <span className="logo-text">ishlink</span>
                 </div>
               </Link>
               <div className="login-title">

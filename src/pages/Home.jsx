@@ -172,7 +172,7 @@ const Home = () => {
       role: "Paxta Teruvchi",
       company: "Surxon Agro",
       content:
-        "JobLink orqali 3 yildan beri mavsumiy ishlar topib kelaman. Eng yaxshi platforma!",
+        "ishLink orqali 3 yildan beri mavsumiy ishlar topib kelaman. Eng yaxshi platforma!",
       avatar: "�‍🌾",
       rating: 5,
       earnings: "4.2 mln so'm",
@@ -638,7 +638,7 @@ const Home = () => {
       <section className="features">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Nima uchun JobLink?</h2>
+            <h2 className="section-title">Nima uchun ishLink?</h2>
             <p className="section-description">
               O'zbekistondagi eng ishonchli mavsumiy ish platformasi
             </p>
